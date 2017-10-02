@@ -45,7 +45,9 @@
     "taskDefinitions": [
       {
         "type": "jake",
-        "required": ["task"],
+        "required": [
+          "task"
+        ],
         "properties": {
           "task": {
             "type": "string",

@@ -12,7 +12,7 @@ function npmInstall(location, opts) {
 	opts.cwd = location;
 	opts.stdio = 'inherit';
 
-	const result = cp.spawnSync(npm, ['install'], opts);
+	const result = cp.spawnSync(npm, ['install', '--no-package-lock'], opts);
 
 	if (result.error || result.status !== 0) {
 		process.exit(1);
